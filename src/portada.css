@@ -1,0 +1,13 @@
+import React from 'react';
+import portada from './portada.jpg'; // Make sure you use the correct file extension for an image
+
+const App = () => {
+  return (
+    <div>
+      <h1>Welcome to my App!</h1>
+      <img src={portada} alt="Portada" />
+    </div>
+  );
+}
+
+export default App;
