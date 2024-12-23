@@ -73,7 +73,7 @@
 
   .menusub1cabeza2 a{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    padding: 0 50px;
+    padding: 0 40px;
     font-size: 22px;
     color: rgb(0, 0, 0);
     text-decoration: none;
@@ -87,11 +87,15 @@
   }
   /*dentro del texto*/
   .dropdown-menu{
-    padding: 0;
-    margin: 0;
-    color: red;
-    background: black;
-    border: 2px solid rgb(255, 0, 0);
+    padding: 2px;
+    margin: 2px;
+    color: #3a3a3a;
+    background: #f4e1c1;
+    border: 2px solid #703e19;
+  }
+  .dropdown-menu :hover{
+    color: white;
+    background: #c07f3a
   }
 
   /* Hamburguesa */
