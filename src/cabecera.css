@@ -111,7 +111,11 @@
 
 /*CELULAR NORMAL*/
 @media (min-width: 0px) and (max-width: 567px){
-
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
 /*Primer cuadro (cabeza1)*/  
   .cabeza1 {
     height: 60px;
@@ -178,7 +182,11 @@
 
 /* Tablet*/
 @media (min-width: 568px) and (max-width: 900px){
-
+  body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
   /*Primer cuadro (cabeza1)*/  
     .cabeza1 {
       height: 100px;

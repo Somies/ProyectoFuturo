@@ -1,3 +1,7 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
 .pie {
     width: 100%;
     height: auto;
@@ -70,6 +74,11 @@ ul li a:hover {
 }
 /* CELULAR NORMAL */
 @media (min-width: 0px) and (max-width: 567px) {
+    body, html {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+    }
     .sub1pie {
         width: 100%;
         flex-direction: column;
