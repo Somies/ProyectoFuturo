@@ -15,14 +15,15 @@ const Portada = () => {
   };
 
   return (
-    <div>
-      <nav>
-        <section className="cabeza1">
-          <section className="sub1cabeza1">
-            <div className="logosub1cabeza1">
+    <div className="xd">
+
+      <nav className='cabeza'>
+        <section className="subcabeza1">
+          <section className="cuadro1cabeza1">
+            <div className="logocuadro1cabeza1">
               <img src="/logo.jpg" alt="logo" />
             </div>
-            <section className="cuentasub1cabeza1">
+            <section className="cuentacuadro1cabeza1">
               <img src="/cuenta.png" alt="cuenta" />
               <a className="nav-link" href="xd">Cuenta</a>
             </section>

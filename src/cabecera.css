@@ -4,18 +4,22 @@
     padding: 0;
     margin: 0;
   }
-
+.cabeza{
+  width: 100%;
+  height: auto;
+}
+  
 /*Primer cuadro (cabeza1)*/  
-.cabeza1 {
+.subcabeza1 {
     width: 100%;
     height: 70px;
     display: flex;
-    background: red;
+    background: white;
     justify-content: center;
 }
 
 /* General: sub1cabeza1 */
-.sub1cabeza1 {
+.cuadro1cabeza1 {
     width: 1920px;
     height: 100%;
     background: black;
@@ -25,24 +29,24 @@
   }
   
   /* Sección del logo */
-  .logosub1cabeza1 img{
+  .logocuadro1cabeza1 img{
     width: 250px;
     padding: 0 40px;
   }
   /*Seccion de la cuenta*/
-  .cuentasub1cabeza1{
+  .cuentacuadro1cabeza1{
     padding: 0 30px;
     display: flex;
     align-items: center;
   }
 
-  .cuentasub1cabeza1 img{
+  .cuentacuadro1cabeza1 img{
     transform: translateX(-20px);
     width: 50px;
     height: auto;
 
   }
-  .cuentasub1cabeza1 a{
+  .cuentacuadro1cabeza1 a{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   color: white;
   font-size: 20px;
@@ -52,7 +56,7 @@
   .sub1cabeza2{
     width: 100%;
     height: 40px;
-    background: gold;
+    background: white;
     display: flex;
     justify-content: center;
   }
@@ -111,14 +115,13 @@
 
 /*CELULAR NORMAL*/
 @media (min-width: 0px) and (max-width: 567px){
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
+  
 /*Primer cuadro (cabeza1)*/  
   .cabeza1 {
     height: 60px;
+  }/* General: sub1cabeza1 */
+  .sub1cabeza1 {
+    width: 100%;
   }
 /* Sección del logo */
   .logosub1cabeza1 img{
@@ -143,7 +146,9 @@
   background: #a0753a;
   justify-content: flex-start;
 }
-
+  .sub1cabeza2 {
+    width: 100%;
+  }
 .hamburguesa {
   transform: translateX(25px);
   display: block;
@@ -158,7 +163,7 @@
   background: #a0753a;
   width: 200px;
   padding: 10px;
-  transform: translateX(100%);
+  transform: translateX(100);
   opacity: 0;
   transition: transform 0.5s ease, opacity 0.5s ease;
   z-index: 10;
@@ -182,11 +187,6 @@
 
 /* Tablet*/
 @media (min-width: 568px) and (max-width: 900px){
-  body, html {
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
   /*Primer cuadro (cabeza1)*/  
     .cabeza1 {
       height: 100px;
@@ -233,7 +233,7 @@
     background: #a0753a;
     width: 300px;
     padding: 20px;
-    transform: translateX(50%);
+    transform: translateX(100);
     opacity: 0;
     transition: transform 0.5s ease, opacity 0.5s ease;
     z-index: 10;
