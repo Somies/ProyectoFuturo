@@ -1,0 +1,318 @@
+.cuerpoingles{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#root {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.sub1cuerpoingles{
+
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: center;
+    
+}
+.totalsub1cuerpoingles{
+    width: 1920px;
+    height: auto;
+    background: url(/public/INGLES/portadaingles.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    filter: brightness(1.1); 
+}
+/*primer cuadro de la foto*/
+.cuadro1sub1cuerpoingles {
+    width: 50%; 
+    height: 100%; 
+    background: transparent;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center; 
+}
+
+/*foto portada*/
+.foto1ingles {
+    position: relative;
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    animation: movimientodelafotoingles 1.5s ease-out forwards; /* Mantiene el estado final */
+    opacity: 0; /* Invisible al inicio */
+}
+
+.foto1ingles:hover {
+    
+    filter: brightness(1.1); 
+}
+/*cuadro1 del texto*/
+.texto1ingles {
+    width: 520px;
+    height: 80px; 
+    background: #dad2c7; 
+    z-index: 1; 
+    overflow: hidden; 
+    border-radius: 60px; 
+    border: 5px solid black; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /* Comienza invisible */
+    animation: subiranimaciontextoingles 1.5s ease-out forwards; /* Aplica la animación */
+}
+
+.texto1ingles p {
+    font-size: 30px; 
+    font-weight: bold; 
+    color: black; 
+    margin: 0; 
+    text-align: center; 
+    white-space: nowrap; 
+    
+}
+
+/* 2do cuadro */
+.cuadro2sub1cuerpoingles {
+    width: 50%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items:flex-start; 
+}
+
+/* Estilo para el título */
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Spicy+Rice&display=swap');
+.titulocuadro2sub1cuerpoingles {
+    transform: translateY(-80px);
+    font-family: "Spicy Rice", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 150px; /* Tamaño grande */
+    text-align: center;
+    margin-bottom: 1px; /* Espacio debajo del título */
+    line-height: 1; /* Reduce el espacio entre líneas */
+    letter-spacing: 25px; /* Separación de letras de 5px */
+    opacity: 0; /* Comienza invisible */
+    animation: MoverAbajoArribaingles 4s ease forwards; /* Animación lenta */
+}
+
+
+
+
+
+/* Primera palabra del título */
+.titulocuadro2sub1cuerpoingles .blancocuadro2sub1cuerpoingles {
+    color: white; /* Color blanco */
+    display: block; /* Coloca las palabras una debajo de otra */
+}
+
+/* Segunda palabra del título */
+.titulocuadro2sub1cuerpoingles .rojocuadro2sub1cuerpoingles {
+    color: red; /* Color rojo */
+    display: block;
+}
+
+/* Estilo para el párrafo */
+.cuadro2sub1cuerpoingles p {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px; /* Tamaño más pequeño */
+    line-height: 1.5; /* Espaciado adecuado */
+    color: white;
+    text-align: justify; /* Alineación de texto */
+    width: 600px; /* Establecer el ancho en 100px */
+    word-wrap: break-word; /* Permite que el texto se rompa y baje */
+    opacity: 0; /* Comienza invisible */
+    animation: MoverAbajoArribaingles 4s ease forwards; /* Animación lenta */
+}
+
+
+/* Texto de aviso especial */
+.avisocuadro2sub1cuerpoingles {
+    font-family: "Lobster", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px; /* Tamaño más pequeño */
+    color: rgb(65, 124, 233); /* Color azul llamativo */
+    font-weight: bold; /* Negrita */
+    display: inline-block; /* Necesario para aplicar transformaciones */
+    animation: movimientotextoavisoingles 1.5s infinite; /* Animación infinita */
+}
+
+/* Animación de globo con pasos adicionales para la foto de la portada*/
+@keyframes movimientodelafotoingles {
+    0% {
+        transform: scale(0); /* Comienza completamente aplastada */
+        opacity: 0; /* Invisible */
+    }
+    50% {
+        transform: scale(1.2); /* Se infla más allá del tamaño normal */
+        opacity: 1; /* Completamente visible */
+    }
+    70% {
+        transform: scale(0.9); /* Se achica ligeramente */
+    }
+    100% {
+        transform: scale(1.1); /* Termina agrandándose un poco */
+        opacity: 1; /* Totalmente visible */
+    }
+}
+
+/* Animación de deslizamiento de abajo hacia arriba del texto del primer cuadro */
+@keyframes subiranimaciontextoingles {
+    0% {
+        transform: translateY(100%); /* Empieza fuera del área visible, desplazado hacia abajo */
+        opacity: 0; /* Totalmente invisible */
+    }
+    100% {
+        transform: translateY(0); /* Termina en su posición original */
+        opacity: 1; /* Totalmente visible */
+    }
+}
+
+/* Animación de agrandar y achicar */
+@keyframes movimientotextoavisoingles {
+    0%, 100% {
+        transform: scale(1); /* Tamaño normal */
+    }
+    50% {
+        transform: scale(1.2); /* Aumenta ligeramente */
+    }
+}
+/*2do cuadero*/
+/* Animación para hacer que aparezca lentamente */
+@keyframes MoverAbajoArribaingles {
+    0% {
+        transform: translateY(0); /* Posición inicial */
+        opacity: 0; /* Invisible */
+    }
+    100% {
+        transform: translateY(-20); /* Posición final */
+        opacity: 1; /* Completamente visible */
+    }
+}
+
+
+/*tamaño para celular*/
+@media (min-width: 0px) and (max-width: 567px){
+    .sub1cuerpoingles{
+        height: 600px;
+    }
+    .totalsub1cuerpoingles{
+        width: 100%;
+        background: url(/public/INGLES/portadamovilingles.png);
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+    }
+    /*primer cuadro de la foto*/
+    .cuadro1sub1cuerpoingles {
+        width: 100%; 
+        height: 50%; 
+        background: transparent;
+    }
+    
+    /*foto portada*/
+    .foto1ingles {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+    }
+    /*cuadro1 del texto*/
+    .texto1ingles {
+        width: 220px;
+        height: 40px; 
+        border-radius: 60px; 
+        border: 2px solid black; 
+        }
+    
+    .texto1ingles p {
+        font-size: 12px; 
+    }
+    
+    /* 2do cuadro */
+    .cuadro2sub1cuerpoingles {
+        width: 100%;
+        height: 50%;
+        background: transparent;
+        color: white;
+        align-items:center; 
+    }
+    
+    /* Estilo para el título */
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Spicy+Rice&display=swap');
+    .titulocuadro2sub1cuerpoingles {
+        transform: translateY(-40px);
+        font-family: "Spicy Rice", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 60px; /* Tamaño grande */
+        text-align: center;
+        margin-bottom: -30px; /* Espacio debajo del título */
+        line-height: 1; /* Reduce el espacio entre líneas */
+        letter-spacing: 10px; /* Separación de letras de 5px */
+        }
+    
+    
+    /* Primera palabra del título */
+    .titulocuadro2sub1cuerpoingles .blancocuadro2sub1cuerpoingles {
+        color: white; /* Color blanco */
+        display: block; /* Coloca las palabras una debajo de otra */
+    }
+    
+    /* Segunda palabra del título */
+    .titulocuadro2sub1cuerpoingles .rojocuadro2sub1cuerpoingles {
+        color: red; /* Color rojo */
+        display: block;
+    }
+    
+    /* Estilo para el párrafo */
+    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Spicy+Rice&display=swap');
+    .cuadro2sub1cuerpoingles p {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 15px; /* Tamaño más pequeño */
+        line-height: 1.5; /* Espaciado adecuado */
+        color: white;
+        text-align: justify; /* Alineación de texto */
+        width: 300px; /* Establecer el ancho en 100px */
+        word-wrap: break-word; /* Permite que el texto se rompa y baje */
+        opacity: 0; /* Comienza invisible */
+        animation: MoverAbajoArribaingles 4s ease forwards; /* Animación lenta */
+    }
+    
+    
+    /* Texto de aviso especial */
+    .avisocuadro2sub1cuerpoingles {
+        display: flex;
+        justify-content: center;
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 20px; /* Tamaño más pequeño */
+        color: rgb(65, 124, 233); /* Color azul llamativo */
+        font-weight: bold; /* Negrita */
+        display: inline-block; /* Necesario para aplicar transformaciones */
+        animation: movimientotextoavisoingles 1.5s infinite; /* Animación infinita */
+        
+    }
+}
