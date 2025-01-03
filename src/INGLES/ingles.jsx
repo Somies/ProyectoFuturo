@@ -89,13 +89,11 @@ const Ingles = () => {
                     {/* Enlaces rápidos */}
                 <div className='informacioningles'>
                     <div className="enlacesingles">
-                        <h3>Categorías</h3>
+                        <h3>Enlaces legales</h3>
                         <ul>
-                            <li><a href="#inicial">Inicial</a></li>
-                            <li><a href="#primaria">Primaria</a></li>
-                            <li><a href="#secundaria">Secundaria</a></li>
-                            <li><a href="#ingles">Inglés</a></li>
-                            <li><a href="#programacion">Programación</a></li>
+                            <li><a href="#inicial">Política de privacidad</a></li>
+                            <li><a href="#primaria">Términos y condiciones</a></li>
+                            <li><a href="#secundaria">Contacta con nosotros</a></li>
                         </ul>
                     </div>
 
@@ -103,10 +101,10 @@ const Ingles = () => {
                     <div className="redesingles">
                         <h3>Síguenos</h3>
                         <div className="iconsingles">
-                            <a href="#"><img src="../facebook.png" alt="Facebook" /></a>
-                            <a href="#"><img src="twiter.png" alt="Twitter" /></a>
-                            <a href="#"><img src="instagram.png" alt="Instagram" /></a>
-                            <a href="#"><img src="wasap.png" alt="YouTube" /></a>
+                            <a href="#"><img src="/facebook.png" alt="Facebook" /></a>
+                            <a href="#"><img src="/twiter.png" alt="Twitter" /></a>
+                            <a href="#"><img src="/instagram.png" alt="Instagram" /></a>
+                            <a href="#"><img src="/wasap.png" alt="YouTube" /></a>
                         </div>
                     </div>
                     </div>
@@ -121,7 +119,7 @@ const Ingles = () => {
                         <ul>
                             <li><a href="#inicial">Política de privacidad</a></li>
                             <li><a href="#primaria">Términos y condiciones</a></li>
-                            <li><a href="#secundaria">Contacta con nosotros</a></li>
+                            <li><a href="#secundaria"></a></li>
                         </ul>
                     </div>
 

@@ -21,7 +21,7 @@
 .totalsub1cuerpoingles{
     width: 1920px;
     height: auto;
-    background: url(/public/INGLES/portadaingles.png);
+    background: url(/public/INGLES/p.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -217,7 +217,7 @@
     }
     .totalsub1cuerpoingles{
         width: 100%;
-        background: url(/public/INGLES/portadamovilingles.png);
+        background: url(/public/INGLES/p.png);
         display: flex;
         flex-direction: column; 
         justify-content: center;
@@ -258,7 +258,6 @@
     }
     
     /* Estilo para el título */
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Spicy+Rice&display=swap');
     .titulocuadro2sub1cuerpoingles {
         transform: translateY(-40px);
         font-family: "Spicy Rice", serif;
@@ -285,7 +284,6 @@
     }
     
     /* Estilo para el párrafo */
-    @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Lobster&family=Spicy+Rice&display=swap');
     .cuadro2sub1cuerpoingles p {
         font-family: "Lobster", serif;
         font-weight: 400;
@@ -314,5 +312,171 @@
         display: inline-block; /* Necesario para aplicar transformaciones */
         animation: movimientotextoavisoingles 1.5s infinite; /* Animación infinita */
         
+    }
+}
+
+/*tamaño para tablet*/
+@media (min-width: 568px) and (max-width: 900px){
+    .sub1cuerpoingles{
+        height: 900px;
+    }
+    .totalsub1cuerpoingles{
+        width: 100%;
+        height: 100%;
+        background: url(/public/INGLES/p.png);
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+        
+    }
+    /*primer cuadro de la foto*/
+    .cuadro1sub1cuerpoingles {
+        width: 100%; 
+        height: 50%; 
+        background: transparent;
+    }
+    
+    /*foto portada*/
+    .foto1ingles {
+        width: 300px;
+        height: 300px;
+        border-radius: 50%;
+    }
+    /*cuadro1 del texto*/
+    .texto1ingles {
+        width: 320px;
+        height: 50px; 
+        border-radius: 60px; 
+        border: 3px solid black; 
+        }
+    
+    .texto1ingles p {
+        font-size: 15px; 
+    }
+    
+    /* 2do cuadro */
+    .cuadro2sub1cuerpoingles {
+        width: 100%;
+        height: 50%;
+        background: transparent;
+        color: white;
+        align-items:center; 
+    }
+    
+    /* Estilo para el título */
+    .titulocuadro2sub1cuerpoingles {
+        transform: translateY(-70px);
+        font-family: "Spicy Rice", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 90px; /* Tamaño grande */
+        text-align: center;
+        margin-bottom: -30px; /* Espacio debajo del título */
+        line-height: 1; /* Reduce el espacio entre líneas */
+        letter-spacing: 10px; /* Separación de letras de 5px */
+        }
+    
+    
+    /* Primera palabra del título */
+    .titulocuadro2sub1cuerpoingles .blancocuadro2sub1cuerpoingles {
+        color: white; /* Color blanco */
+        display: block; /* Coloca las palabras una debajo de otra */
+    }
+    
+    /* Segunda palabra del título */
+    .titulocuadro2sub1cuerpoingles .rojocuadro2sub1cuerpoingles {
+        color: red; /* Color rojo */
+        display: block;
+    }
+    
+    /* Estilo para el párrafo */
+    .cuadro2sub1cuerpoingles p {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 28px; /* Tamaño más pequeño */
+        line-height: 1.5; /* Espaciado adecuado */
+        color: white;
+        text-align: justify; /* Alineación de texto */
+        width: 600px; /* Establecer el ancho en 100px */
+        word-wrap: break-word; /* Permite que el texto se rompa y baje */
+        opacity: 0; /* Comienza invisible */
+        animation: MoverAbajoArribaingles 4s ease forwards; /* Animación lenta */
+    }
+    
+    
+    /* Texto de aviso especial */
+    .avisocuadro2sub1cuerpoingles {
+        display: flex;
+        justify-content: center;
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25px; /* Tamaño más pequeño */
+        color: rgb(65, 124, 233); /* Color azul llamativo */
+        font-weight: bold; /* Negrita */
+        display: inline-block; /* Necesario para aplicar transformaciones */
+        animation: movimientotextoavisoingles 1.5s infinite; /* Animación infinita */
+        
+    }
+
+}
+
+/*tamaño para laptop*/
+@media (min-width: 901px) and (max-width: 1300px){
+
+    .sub1cuerpoingles{
+        height: 640px;
+    }
+    /*primer cuadro de la foto*/
+    .cuadro1sub1cuerpoingles {
+        width: 50%; 
+        height: 100%; 
+        background: transparent;
+        display: flex; 
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center; 
+    }
+    
+    /*foto portada*/
+    .foto1ingles {
+        position: relative;
+        width: 450px;
+        height: 450px;
+    }
+    
+    .titulocuadro2sub1cuerpoingles {
+        transform: translateY(-50px);
+        font-size: 130px; /* Tamaño grande */
+    }
+    
+    /* Estilo para el párrafo */
+    .cuadro2sub1cuerpoingles p {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 26px; /* Tamaño más pequeño */
+        line-height: 1.5; /* Espaciado adecuado */
+        color: white;
+        text-align: justify; /* Alineación de texto */
+        width: 550px; /* Establecer el ancho en 100px */
+        word-wrap: break-word; /* Permite que el texto se rompa y baje */
+        opacity: 0; /* Comienza invisible */
+        animation: MoverAbajoArribaingles 4s ease forwards; /* Animación lenta */
+    }
+    
+    
+    /* Texto de aviso especial */
+    .avisocuadro2sub1cuerpoingles {
+        font-family: "Lobster", serif;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 30px; /* Tamaño más pequeño */
+        color: rgb(65, 124, 233); /* Color azul llamativo */
+        font-weight: bold; /* Negrita */
+        display: inline-block; /* Necesario para aplicar transformaciones */
+        animation: movimientotextoavisoingles 1.5s infinite; /* Animación infinita */
     }
 }
